@@ -26,13 +26,13 @@ router.post('/signup', function(req, res) {
             var transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
-                  user: 'naveenrawat51@gmail.com',
-                  pass: 'yash@2010'
+                  user: 'youremail@gmail.com',
+                  pass: 'chahetoyourpassword'
                 }
               });
                const email = req.body.email;
               var mailOptions = {
-                from: 'naveenrawat51@gmail.com',
+                from: 'email@gmail.com',
                 to: email,
                 subject: 'Account Created Successfully!!',
                 html: '<h3>Your account successfully created on Chat-App!!</h3> <br><br><strong> Email:</strong> ' + req.body.email + '<br><strong> Password:</strong> ' +req.body.password
